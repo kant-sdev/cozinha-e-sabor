@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function SeekBenefits() {
   return (
-    <section className='w-full py-12 sm:py-20 bg-gray-50'>
+    <section className='w-full py-12 sm:py-20 bg-gray-50 flex justify-center'>
       <div className="container px-4 sm:px-6">
         {/* Layout mobile: conteúdo acima, imagem abaixo */}
         <div className="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:items-center">

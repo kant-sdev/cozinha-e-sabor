@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-[url('/images/landing-page-hero.jpg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/60 before:z-10">
+    <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-[url('/images/landing-page-hero.jpg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/60 before:z-10 flex justify-center w-full">
       <div className="container relative z-20 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto space-y-4 sm:space-y-6 text-white text-center">
           {/* Badge */}

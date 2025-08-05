@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function AboutRecipes() {
   return (
-    <section className='w-full py-12 sm:py-16 md:py-20 bg-orange-100/50 px-4 sm:px-6'>
+    <section className='w-full py-12 sm:py-16 md:py-20 bg-orange-100/50 px-4 sm:px-6 flex justify-center'>
       <div className="container flex flex-col justify-center items-center space-y-8 sm:space-y-12">
         {/* Badge */}
         <Badge className='bg-gray-400/40 backdrop-blur-sm text-black text-xs sm:text-sm px-3 py-1 sm:px-4 sm:py-2 font-bold'>

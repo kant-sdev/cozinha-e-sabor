@@ -13,7 +13,7 @@ export default function HeaderDefault() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className='sticky top-0 z-50 w-full py-4 bg-stone-900/95 backdrop-blur-md transition-colors'>
+    <header className='sticky top-0 z-50 w-full py-4 bg-stone-900/95 backdrop-blur-md transition-colors flex justify-center'>
       <div className="container flex items-center justify-between px-4">
         {/* Logo */}
         <h2 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-orange-300 bg-clip-text text-transparent">

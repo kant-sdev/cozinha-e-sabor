@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function FooterDefault() {
   return (
-    <footer className="w-full bg-stone-900/90 text-white px-4 sm:px-6">
+    <footer className="w-full bg-stone-900/90 text-white px-4 sm:px-6 flex justify-center">
       <div className="container py-8 sm:py-12">
         {/* Main Footer Content - now stacked on mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">

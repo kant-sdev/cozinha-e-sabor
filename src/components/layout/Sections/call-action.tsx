@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function CallAction() {
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-orange-600 px-4 sm:px-6">
+    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-orange-600 px-4 sm:px-6 flex justify-center">
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
           {/* Headline - tamanhos responsivos */}
