@@ -7,7 +7,6 @@ export default function UserTestimonials() {
   return (
     <section className='w-full py-12 sm:py-16 md:py-20 bg-gray-50 px-4 sm:px-6'>
       <div className="container">
-        {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Depoimentos de Usuários
@@ -17,7 +16,6 @@ export default function UserTestimonials() {
           </p>
         </div>
 
-        {/* Carousel */}
         <Carousel
           opts={{
             align: "start",
@@ -47,7 +45,7 @@ export default function UserTestimonials() {
                       
                       {/* Comment */}
                       <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 italic min-h-[80px] sm:min-h-[100px]">
-                        "{testimonial.comment}"
+                        &quot;{testimonial.comment}&quot;
                       </p>
                       
                       {/* User Info */}
