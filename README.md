@@ -14,7 +14,7 @@ Cuisine & Flavor é uma aplicação web moderna desenvolvida com React e Next.js
 ## 🛠️ Tech Stack
 **Core Frameworks**
 
-- `Next.js 14 (App Router)` - Para renderização híbrida e roteamento
+- `Next.js(App Router)` - Para renderização híbrida e roteamento
 - `TypeScript` - Tipagem estática para maior segurança no código
 
 **UI & Styling**
