@@ -58,7 +58,7 @@ export default function SeekBenefits() {
             </div>
 
             {/* Buttons - ajustados para mobile */}
-            <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4'>
+            <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 items-center'>
               <Link href={'/'} className='w-full sm:w-auto'>
                 <Button className='w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-600 hover:to-orange-500 text-white font-bold px-4 sm:px-6 text-sm sm:text-base text-md py-6'>
                   Explorar
@@ -69,7 +69,7 @@ export default function SeekBenefits() {
                 href="/"
                 className="group inline-flex items-center justify-center sm:justify-start gap-1 text-orange-600 hover:text-orange-700 font-medium text-sm sm:text-base transition-colors relative px-2 hover:font-semibold sm:hover:font-bold"
               >
-                <span className="relative after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[2px] after:bg-orange-600 group-hover:after:w-full after:transition-all after:duration-300 text-md py-6">
+                <span className=" text-md py-6">
                   Buscar
                 </span>
                 <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
