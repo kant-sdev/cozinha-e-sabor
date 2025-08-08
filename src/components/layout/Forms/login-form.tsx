@@ -39,7 +39,7 @@ export default function LoginForm() {
       localStorage.setItem('token', res.token);
 
       // Adiciona o token nos cookies também
-      document.cookie = `token=${res.token}; path=/; max-age=${60 * 60 * 24 * 7}`;
+      document.cookie = `token=${res.token}; path=/; max-age=${60 * 60 * 2}`;
 
       router.push('/painel');
       toast.success('Login realizado com sucesso!');
