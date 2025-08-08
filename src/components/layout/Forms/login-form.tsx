@@ -15,7 +15,7 @@ import { toast } from 'sonner'
 import z from 'zod'
 
 const loginSchema = z.object({
-  username: z.string().min(3,'Inform um nome de usuário válido'),
+  username: z.string().min(3, 'Inform um nome de usuário válido'),
   password: z.string().min(6, 'A senha deve ter pelo menos 6 caracteres'),
 })
 
@@ -37,14 +37,14 @@ export default function LoginForm() {
     try {
       const res = await authService.login(data.username, data.password);
       localStorage.setItem('token', res.token);
+
+      // Adiciona o token nos cookies também
+      document.cookie = `token=${res.token}; path=/; max-age=${60 * 60 * 24 * 7}`;
+
       router.push('/painel');
-      toast.success('Login realizado com sucesso!', {
-        description: 'Bem-vindo de volta!',
-      });
+      toast.success('Login realizado com sucesso!');
     } catch (error) {
-      toast.error('Erro ao realizar login', {
-        description: 'Verifique suas credenciais e tente novamente.',
-      });
+      toast.error('Credenciais inválidas');
       console.error('Login error:', error);
     } finally {
       setIsLoading(false);

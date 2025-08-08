@@ -1,7 +1,13 @@
+'use client'
+
 import LoginForm from '@/components/layout/Forms/login-form'
+import { useAuth } from '@/hooks/useAuth'
 import React from 'react'
 
 export default function Page() {
+
+  useAuth(true)
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <main className="flex-1 flex items-center justify-center px-4">

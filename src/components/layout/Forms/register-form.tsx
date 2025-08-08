@@ -40,27 +40,22 @@ export default function RegisterForm() {
   })
 
   async function onSubmit(data: z.infer<typeof registerSchema>) {
-  setIsLoading(true);
-  try {
-    await authService.register({
-      username: data.username,
-      email: data.email,
-      phone: data.phone || null,
-      password: data.password 
-    });
+    setIsLoading(true);
+    try {
+      await authService.register(data);
 
-    const loginRes = await authService.login(data.username, data.password);
-    localStorage.setItem('token', loginRes.token);
+      const loginRes = await authService.login(data.username, data.password);
+      localStorage.setItem('token', loginRes.token);
 
-    router.push('/painel');
-    toast.success('Registro realizado com sucesso!');
-  } catch (error) {
-    toast.error('Verifique os dados e tente novamente.');
-    console.error('Erro ao registrar:', error);
-  } finally {
-    setIsLoading(false);
+      router.push('/painel');
+      toast.success('Registro e login realizados com sucesso!');
+    } catch (error) {
+      toast.error('Erro no registro/login');
+      console.error('Erro:', error);
+    } finally {
+      setIsLoading(false);
+    }
   }
-}
 
   return (
     <Card className="shadow-lg">
