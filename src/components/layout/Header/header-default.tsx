@@ -37,7 +37,7 @@ export default function HeaderDefault() {
           </div>
 
           <div className="flex gap-4">
-            <NavButton href="/">Entrar</NavButton>
+            <NavButton href="/login">Entrar</NavButton>
             <RegisterButton href="/">Cadastrar-me</RegisterButton>
           </div>
         </div>
